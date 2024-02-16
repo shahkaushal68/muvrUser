@@ -1,0 +1,145 @@
+.grayDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--clr-darkgray);
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.workQuantityCard {
+  background: var(--clr-faintpurple);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.workQuantityCardWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.ratingsReviewsWrap {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.fvrtMuvrDetailsProgress :global .ant-progress-text {
+  font-weight: 500;
+}
+.fvrtMuvrDetailsProgress:global.ant-progress .ant-progress-success-bg,
+.fvrtMuvrDetailsProgress:global.ant-progress .ant-progress-bg {
+  background-color: var(--accent-primary);
+}
+.fvrtMuvrSelect:global.ant-select .ant-select-selector {
+  border-radius: 16px;
+  border: 1px solid var(--clr-lavender);
+  height: 34px;
+  transition: all 0.3s;
+}
+.fvrtMuvrSelect:global.ant-select .ant-select-selector:hover {
+  border-color: var(--accent-primary);
+}
+.fvrtMuvrSelect:global.ant-select:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer):hover
+  .ant-select-selector {
+  border-color: var(--clr-lavender);
+}
+.fvrtMuvrSelect:global.ant-select-focused.ant-select:not(
+    .ant-select-disabled
+  ):not(.ant-select-customize-input):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  border-color: var(--clr-lavender);
+  box-shadow: none;
+}
+.fvrtMuvrSelectDropdown:global.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: var(--clr-white);
+  background-color: var(--accent-primary);
+}
+.fvrtMuvrDetailsSelect {
+  display: flex;
+  align-items: center;
+}
+.fvrtMuvrProfileRate :global .anticon {
+  width: 16px;
+  height: 16px;
+}
+.fvrtMuvrProfileRate:global.ant-rate .ant-rate-star-zero .ant-rate-star-first,
+.fvrtMuvrProfileRate:global.ant-rate .ant-rate-star-zero .ant-rate-star-second {
+  color: var(--clr-gray);
+}
+.fvrtMuvrProfileRate:global.ant-rate {
+  font-size: 0;
+}
+.sectionSpaceBR {
+  padding: 0 0 16px 16px;
+}
+.qualityBadge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: var(--clr-faintpurple);
+}
+.workImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Review and sevice Type modal start */
+.fvrtMuvrModal :global .ant-modal-close {
+  display: none;
+}
+
+.fvrtMuvrRadio :global .ant-radio-button-wrapper {
+  height: 34px;
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 8px;
+  padding-block: unset;
+  font-size: 14px;
+  border: 1px solid var(--clr-lavender);
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+}
+.fvrtMuvrRadio :global .ant-radio-button-wrapper:not(:last-of-type) {
+  margin-right: 8px;
+}
+.fvrtMuvrRadio :global .ant-radio-button-wrapper:hover {
+  position: relative;
+  color: var(--clr-dark);
+}
+.fvrtMuvrRadio :global .ant-radio-button-wrapper:not(:first-child)::before {
+  content: none;
+}
+.fvrtMuvrRadio:global.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled),
+.fvrtMuvrRadio:global.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):active,
+.fvrtMuvrRadio:global.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):hover {
+  background: var(--clr-faintpurple);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+.serviceType {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+.modalBtnWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalBtnWrap button:not(:last-of-type) {
+  margin-right: 8px;
+}
+.modalBtnWrap button {
+  width: 100%;
+}
+/* Review and sevice Type modal end */

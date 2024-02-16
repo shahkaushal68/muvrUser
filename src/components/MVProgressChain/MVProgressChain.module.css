@@ -1,0 +1,47 @@
+:root {
+  --chainLeftCol: 45px;
+}
+.chainLeftCol {
+  width: var(--chainLeftCol);
+  height: max-content;
+}
+.chainContentRightCol {
+  width: calc(100% - var(--chainLeftCol));
+}
+.progressFlexWrap:not(:last-child) {
+  padding-bottom: 20px;
+}
+.progressFlexWrap {
+  position: relative;
+}
+.progressChainBar {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--clr-gray);
+  background-color: var(--clr-white);
+}
+.progressChainBar .roundCircle {
+  width: 14px;
+  height: 14px;
+  /* background-color: var(--clr-perfume-haze); */
+  background: linear-gradient(180deg, #9506e6 0%, #3b1ade 100%);
+  opacity: 0.1;
+}
+.progressFlexWrap:not(:last-child)::after {
+  content: "";
+  width: 4px;
+  height: calc(100% - 22px);
+  background: linear-gradient(180deg, #9506e6 0%, #3b1ade 100%);
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+  left: 21px;
+  z-index: 1;
+}
+.progressFlexWrap:global(.active) .roundCircle,
+.progressFlexWrap:global(.active)::after {
+  opacity: 1;
+}
+.progressFlexWrap:global(.active) .progressChainBar {
+  border-color: var(--accent-primary);
+}

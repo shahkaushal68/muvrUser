@@ -1,0 +1,89 @@
+.header {
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--clr-lavender);
+}
+.modal :global .ant-modal-content {
+  border-radius: 16px;
+  padding: 0;
+}
+
+.modal :global .ant-modal-close {
+  color: var(--clr-darkgray);
+}
+
+.modal .header {
+  padding: 16px 24px;
+  line-height: 1;
+}
+
+.modal .modalBody {
+  padding: 24px 16px 16px 16px;
+}
+
+/* Responsive start */
+
+@media only screen and (max-width: 1799px) {
+}
+
+@media only screen and (max-width: 1599px) {
+}
+
+@media only screen and (max-width: 1439px) {
+}
+
+@media only screen and (max-width: 1429px) {
+}
+
+@media only screen and (max-width: 1365px) {
+}
+
+@media only screen and (max-width: 1279px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 1023px) {
+  .header {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .modal .modalBody {
+    padding: 18px;
+  }
+  .modal .header {
+    padding: 16px 18px;
+  }
+  .header {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 575px) {
+  .header {
+    font-size: 16px;
+  }
+  .modal .modalBody {
+    padding: 16px;
+  }
+  .modal .header {
+    padding: 14px 16px;
+  }
+  .modal:global.ant-modal .ant-modal-close {
+    top: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 350px) {
+}
+
+/* Responsive end */

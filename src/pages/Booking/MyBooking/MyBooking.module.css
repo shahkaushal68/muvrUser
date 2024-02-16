@@ -1,0 +1,198 @@
+:root {
+  --track-driver-col-height: 400px;
+  --location-dropdown-col-height: 250px;
+  --pickup-dropdown-col-height: 160px;
+}
+/* booking tracking start */
+.trackWrap {
+  background-color: var(--clr-lightgray);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.trackDriverMapWrap {
+  height: var(--track-driver-col-height);
+  overflow-y: auto;
+}
+.trackDriverDetailWrap {
+  background-color: var(--clr-white);
+  padding: 16px;
+  border: 1px solid var(--clr-lavender);
+  border-width: 1px 0;
+  height: calc(100vh - var(--track-driver-col-height));
+  overflow-y: auto;
+  border-radius: 16px 16px 0 0;
+  margin-top: auto;
+}
+.trackerDriverContactBox {
+  border-radius: inherit;
+  border-width: 1px 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.trackerDriverContactBox :global .ping-muvers-list {
+  border-bottom: 0;
+}
+.trackerDriverContactBox :global .ping-muvers-list:last-child {
+  padding-bottom: 0;
+}
+.draftEditContent {
+  padding: 12px 12px 0;
+  justify-content: center;
+}
+/* booking tracking end */
+/* edit booking start */
+.editBookingList {
+  /* height: calc(100vh - 229px); */
+  overflow-y: auto;
+}
+.editBookingList a {
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  padding: 16px;
+  transition: all 0.3s;
+}
+.editBookingList a:not(:last-child) {
+  margin-bottom: 16px;
+}
+.editBookingList :global a:hover {
+  border-color: var(--accent-primary);
+}
+.editBookingList :global a:hover h4,
+.editBookingList :global a:hover .darkgray {
+  color: var(--accent-primary);
+}
+/* edit booking end */
+/* booking location start */
+.locationMapCol {
+  background-color: var(--clr-lavender);
+  height: calc(100vh - var(--location-dropdown-col-height));
+  overflow-y: auto;
+}
+.locationDropdownCol {
+  height: var(--location-dropdown-col-height);
+  overflow-y: auto;
+}
+/* booking location end */
+/* pickup location start */
+.picupDropdownCol {
+  height: var(--pickup-dropdown-col-height);
+  overflow-y: auto;
+}
+.picupMapCol {
+  background-color: var(--clr-lavender);
+  height: calc(100vh - var(--pickup-dropdown-col-height));
+  overflow-y: auto;
+}
+.confirmLocationWrap {
+  top: 100%;
+  margin-bottom: 30px;
+}
+/* pickup location end */
+.trackTooltipData :global .ant-tooltip-inner {
+  width: 100%;
+  min-width: 100%;
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+}
+.trackTooltipData:global.ant-tooltip .ant-tooltip-arrow:before {
+  background: var(--clr-white);
+}
+.trackTooltipData:global.ant-tooltip {
+  max-width: 70%;
+}
+/* Collapse start */
+.addItemsCollapseWrap:not(:first-child) {
+  margin-top: 24px;
+}
+.addedItemsWrap {
+  max-width: 24px;
+  max-height: 24px;
+  position: relative;
+}
+.addedItemsWrap img {
+  max-width: inherit;
+  max-height: inherit;
+}
+.addedItemsbg {
+  width: 48px;
+  height: 48px;
+  background: #f8f5ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.itemTitleQuantity {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.itemTitleQuantity h6 {
+  word-break: break-word;
+}
+.addedItemContainer {
+  display: flex;
+  align-items: center;
+}
+.itemTitlePriceWrap {
+  margin-left: 8px;
+}
+
+.itemWithCounterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addedItemsContainer .itemWithCounterWrap:not(:last-of-type) {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--clr-lavender);
+}
+.addedItemsContainer .itemWithCounterWrap:not(:first-of-type) {
+  padding-top: 12px;
+}
+.addItemsCollapseWrap :global .ant-collapse-item {
+  position: relative;
+}
+/* Collapse end */
+.reviewChangesExtraHeadText {
+  top: 16px;
+}
+/* responsive css start */
+@media (max-width: 767px) {
+  :root {
+    --track-driver-col-height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .editBookingList a {
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .editBookingList :global h4 {
+    font-size: 14px;
+  }
+  .reviewChangesExtraHeadText {
+    top: 9px;
+  }
+}
+@media (max-width: 349px) {
+  .donationLocakationFlex {
+    flex-wrap: wrap;
+  }
+}
+/* responsive css end */
+
+.emptyTabs {
+  height: 100%;
+}
+
+.emptyTabs :global .ant-tabs-content-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

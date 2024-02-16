@@ -1,0 +1,80 @@
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  color: var(--clr-dark);
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--clr-lavender);
+  background-color: var(--clr-white);
+  min-width: 175px;
+  padding: 10px 12px;
+  transition: 0.3s all;
+}
+
+.dropdownButtonActive {
+  border-color: var(--accent-primary);
+}
+
+.dropdownButtonText {
+  white-space: nowrap;
+  margin: 0 6px 0 6px;
+}
+
+.noTextPrefix {
+  margin-left: 0;
+}
+
+.dropdownArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  margin-left: auto;
+  transition: 0.3s all;
+}
+
+.arrowRotate {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu:global(.ant-dropdown-menu.ant-dropdown-menu-root) {
+  padding: 0;
+  border-radius: 12px;
+  border: 1px solid var(--clr-lavender);
+  overflow: hidden;
+}
+
+/* Item */
+.dropdownMenu:global(.ant-dropdown-menu .ant-dropdown-menu-item) {
+  padding: 8px 12px;
+  color: var(--clr-dark);
+  border-radius: 0px;
+}
+
+/* Item Hover */
+.dropdownMenu:global(.ant-dropdown-menu .ant-dropdown-menu-item):hover {
+  background-color: #e7dff8;
+}
+
+/* Item Selected */
+.dropdownMenu:global(.ant-dropdown-menu .ant-dropdown-menu-item.ant-dropdown-menu-item-selected) {
+  background-color: var(--clr-faintpurple);
+  color: var(--accent-primary);
+  position: relative;
+}
+
+/* Selected Item Checkmark */
+.dropdownMenu:global(.ant-dropdown-menu .ant-dropdown-menu-item.ant-dropdown-menu-item-selected)::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 14px;
+  height: 10px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTIwNTcgNy41NDU0Mkw0Ljk5MTI4IDcuNjE2MTNMNS4wNjE5OSA3LjU0NTQyTDEyLjIzMzIgMC4zNzQxNjRDMTIuNTk4OCAwLjAwODYxMjEgMTMuMjA1MiAwLjAwODYxMjEgMTMuNTcwNyAwLjM3NDE2NEMxMy45MzYzIDAuNzM5NzE1IDEzLjkzNjMgMS4zNDYwOSAxMy41NzA3IDEuNzExNjRMNS42NjAwMiA5LjYyMjM1QzUuNDgzMjMgOS43OTkxMyA1LjI0MzQ5IDkuOSA0Ljk5MTI4IDkuOUM0LjczOTA3IDkuOSA0LjQ5OTMzIDkuNzk5MTMgNC4zMjI1NCA5LjYyMjM1TDAuMzc0MTY0IDUuNjczOTdDMC4wMDg2MTIxMyA1LjMwODQyIDAuMDA4NjEyMDcgNC43MDIwNSAwLjM3NDE2NCA0LjMzNjQ5QzAuNzM5NzE1IDMuOTcwOTQgMS4zNDYwOSAzLjk3MDk0IDEuNzExNjQgNC4zMzY0OUw0LjkyMDU3IDcuNTQ1NDJaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfNDI2NF8xOTIxMCkiIHN0cm9rZT0iI0Y4RjVGRiIgc3Ryb2tlLXdpZHRoPSIwLjIiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl80MjY0XzE5MjEwIiB4MT0iNi45NTIxMiIgeTE9IjIuNzg4NDYiIHgyPSI2Ljk1MjExIiB5Mj0iMTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzk1MDZFNiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzQjFBREUiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4=");
+}

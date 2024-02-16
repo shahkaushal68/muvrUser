@@ -1,0 +1,28 @@
+.cardItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  padding: 8px 16px;
+  min-height: 56px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.cardItem:hover {
+  border-color: var(--accent-primary);
+}
+.cardItemLeft {
+  display: flex;
+  align-items: center;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}

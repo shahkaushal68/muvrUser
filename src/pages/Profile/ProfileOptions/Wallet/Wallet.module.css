@@ -1,0 +1,29 @@
+.payCardWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payCardWrap img {
+  width: 40px;
+  height: 40px;
+}
+
+.paymentIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--clr-lavender);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.walletCardWrap :global .ant-divider {
+  margin: 16px 0;
+}
+
+.walletPaymentCardWrap :global .ant-divider:last-child,
+.walletCardWrap .walletCardWrapInner:last-child :global .ant-divider {
+  display: none;
+}

@@ -1,0 +1,36 @@
+.appBar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  border-top: 1px solid var(--clr-lavender);
+  padding: 10px 15px;
+  height: 80px;
+}
+
+.appBarLink {
+  text-align: center;
+  color: var(--clr-gray);
+  text-decoration: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.appBarLink:global.active,
+.appBarLink:global.active h6 {
+  color: var(--accent-primary);
+}
+
+.appBarLink h6 {
+  margin-top: 5px;
+  color: var(--clr-darkgray);
+  font-weight: 400;
+}
+
+.appBarLink:global.active div{
+  border: 2px solid var(--accent-primary);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  padding: 2px;
+}

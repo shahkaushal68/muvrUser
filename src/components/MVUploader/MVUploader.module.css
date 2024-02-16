@@ -1,0 +1,25 @@
+.profileImg {
+  position: relative;
+  border-radius: 50%;
+}
+
+.imgUploaderBg {
+  border: 2px solid var(--clr-white);
+  background-color: var(--clr-faintpurple);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 52%;
+}
+.imgUploaderBg label {
+  flex-shrink: 0;
+  display: flex;
+}
+.imgUploaderBg label svg {
+  flex-shrink: 0;
+}

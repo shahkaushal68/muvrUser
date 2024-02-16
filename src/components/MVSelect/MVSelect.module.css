@@ -1,0 +1,149 @@
+.select {
+  min-width: 240px;
+  width: 100%;
+}
+.selectWrapper {
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  z-index: 1;
+  font-size: 12px;
+  color: var(--clr-darkgray);
+  top: 10px;
+  left: 15px;
+  pointer-events: none;
+}
+
+.select:global(.ant-select .ant-select-selector) {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: var(--clr-faintpurple);
+  border: 1px solid var(--clr-lavender);
+  border-radius: 8px 8px 0 0;
+  border-width: 0 0 1px 0;
+}
+
+.select:global(
+    .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+        .ant-pagination-size-changer
+      ):hover
+      .ant-select-selector
+  ):hover,
+.select:global(
+    .ant-select-focused.ant-select:not(.ant-select-disabled):not(
+        .ant-select-customize-input
+      ):not(.ant-pagination-size-changer)
+      .ant-select-selector
+  ) {
+  border-color: var(--accent-primary);
+  box-shadow: none;
+}
+
+.select :global(.ant-select-selector .ant-select-selection-item) {
+  font-weight: 500;
+  color: var(--clr-dark);
+  line-height: 1;
+}
+
+.prefix {
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hasLabel .select:global(.ant-select .ant-select-selector) {
+  align-items: flex-end;
+}
+
+.hasPrefix .select:global(.ant-select .ant-select-selector) {
+  padding-left: 45px;
+}
+
+.hasPrefix .label {
+  left: 45px;
+}
+
+.select :global .ant-select-arrow {
+  transition: 0.3s all;
+}
+
+.select:global(.ant-select-open > .ant-select-arrow) {
+  transform: rotate(180deg);
+}
+
+.isDisabled .select :global .ant-select-arrow,
+.isDisabled .select:global.ant-select-disabled .ant-select-selection-item {
+  color: var(--clr-lightgray);
+}
+
+.isDisabled .label {
+  color: var(--clr-lightgray);
+}
+
+.selectMenu {
+  padding: 0;
+  border: 1px solid var(--clr-lavender);
+}
+
+.selectMenu :global .ant-select-item-option {
+  padding: 10px 12px;
+  color: var(--clr-dark);
+}
+
+.selectMenu :global .ant-select-item-option-selected {
+  position: relative;
+}
+
+.selectMenu :global .ant-select-item-option-selected::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.92057 10.5454L5.99128 10.6161L6.06199 10.5454L13.2332 3.37416C13.5988 3.00861 14.2052 3.00861 14.5707 3.37416C14.9363 3.73972 14.9363 4.34609 14.5707 4.71164L6.66002 12.6223C6.48323 12.7991 6.24349 12.9 5.99128 12.9C5.73907 12.9 5.49933 12.7991 5.32254 12.6223L1.37416 8.67397C1.00861 8.30842 1.00861 7.70205 1.37416 7.33649C1.73972 6.97094 2.34609 6.97094 2.71164 7.33649L5.92057 10.5454Z' fill='%239506E6'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.selectMenu
+  :global(
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  ) {
+  background-color: var(--clr-faintpurple);
+  font-weight: 400;
+}
+
+.selectMenu
+  :global(
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled)
+  ) {
+  background-color: #e7dff8;
+}
+
+.selectMenu
+  :global(
+    .ant-select-dropdown
+      .ant-select-item-option-active:not(.ant-select-item-option-disabled)
+  ) {
+  background-color: #f8f5ff;
+}
+
+/* Responsive start */
+@media only screen and (max-width: 1279px) {
+  .select :global(.ant-select-selector .ant-select-selection-item) {
+    font-size: 12px;
+  }
+  .selectMenu:global.ant-select-dropdown .ant-select-item-option-content {
+    font-size: 12px;
+  }
+}
+/* Responsive end */

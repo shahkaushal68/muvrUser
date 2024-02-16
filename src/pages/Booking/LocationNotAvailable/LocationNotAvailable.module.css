@@ -1,0 +1,70 @@
+.backArrow {
+  position: static;
+}
+.backArrow :global .positioned-left {
+  position: static;
+  transform: unset;
+}
+.mapImg {
+  max-width: 22rem;
+  max-height: 22rem;
+  min-width: 22rem;
+  min-height: 22rem;
+  margin: 0 auto;
+  box-shadow: 2px 3px 100px 90px rgba(255, 255, 255, 1) inset;
+  -webkit-box-shadow: 2px 3px 100px 90px rgba(255, 255, 255, 1) inset;
+  -moz-box-shadow: 2px 3px 100px 90px rgba(255, 255, 255, 1) inset;
+  position: relative;
+}
+
+.mapImg img {
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: inherit;
+  max-height: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  position: relative;
+  z-index: -1;
+}
+.locationIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inputWraps {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.mvButtonNL {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.notAvaiWrap {
+  padding: 24px 16px 0 16px;
+}
+
+.zipCodeInput input::-webkit-outer-spin-button,
+.zipCodeInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  appearance: none;
+}
+
+.zipCodeInput input[type="number"] {
+  -moz-appearance: textfield;
+}
+.zipCodeInput button {
+  min-height: 0;
+  padding-bottom: 7px;
+}
+/* Responsive start */
+@media (max-width: 480px) {
+  .mapImg {
+    min-width: 100%;
+    min-height: auto;
+  }
+}
+/* Responsive end */

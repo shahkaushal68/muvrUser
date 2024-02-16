@@ -1,0 +1,53 @@
+.mvDriverLikeCardWrapper {
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+}
+.mvDriverLikeCardWrapper:not(:last-child) {
+  margin-bottom: 16px;
+}
+.userCardBodyHead {
+  padding: 12px;
+}
+.userCardBodyFooter {
+  padding: 0 0 12px;
+  grid-gap: 12px;
+  box-shadow: 0px -3px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.userCardBodyFooter p {
+  padding: 12px 12px 0;
+}
+.userAvatarImg :global .ant-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid var(--clr-white);
+  background-color: var(--clr-lavender);
+}
+.userAvatarImg :global .ant-image:not(:last-child) {
+  position: relative;
+  z-index: 1;
+}
+.userAvatarImg :global .ant-image:not(:first-child) {
+  /* position: ; */
+  margin-left: -15px;
+}
+.likeBox {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--clr-lavender);
+  transition: all 0.3s;
+}
+/* .likeBox:hover svg, */
+.redText svg {
+  color: var(--clr-red);
+}
+.likeBox:hover {
+  border-color: var(--accent-primary);
+}
+/* responsive css start */
+/* @media (max-width: 349px) {
+  .userAvatarImg :global .ant-image {
+    width: 30px;
+    height: 30px;
+  }
+} */

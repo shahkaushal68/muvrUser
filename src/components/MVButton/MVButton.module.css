@@ -1,0 +1,213 @@
+button {
+  font-family: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.button {
+  font-size: 16px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: var(--button-padding);
+  border: none;
+  border-radius: 12px;
+  transition: 0.3s all;
+  min-width: 140px;
+  cursor: pointer;
+}
+
+.button.isLoading {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button .Loader {
+  width: 22px;
+  height: 22px;
+  animation: rotate 0.8s infinite;
+  margin-right: 8px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.buttonMedium {
+  --button-padding: 8px 16px;
+  min-height: 52px;
+}
+
+.buttonLarge {
+  --button-padding: 8px 20px;
+  height: 48px;
+}
+
+.buttonPrimary {
+  background-image: var(--accent-gradiant);
+  color: var(--clr-white);
+}
+
+.buttonPrimary:hover {
+  box-shadow: 0px 0px 6px 3px rgba(var(--accent-primary-rgb), 0.4);
+}
+
+.buttonPrimary:active {
+  box-shadow: none;
+}
+
+.buttonPrimary:disabled,
+.buttonPrimary.disabled {
+  background-color: var(--clr-slategray);
+  background-image: none;
+  color: var(--clr-lightgray);
+  box-shadow: none !important;
+}
+
+.buttonSecondary {
+  --border-width: 1px;
+  position: relative;
+  background: transparent;
+  /* -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; */
+  color: var(--accent-primary);
+  border-radius: 12px;
+  z-index: 0;
+  border: 1px solid var(--accent-primary);
+}
+
+.buttonSecondary::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: var(--border-width) solid transparent;
+  border-radius: calc(12px - var(--border-width));
+  background: inherit;
+  background-origin: border-box;
+  background-clip: border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.buttonSecondary:hover {
+  box-shadow: 0px 0px 6px 3px rgba(var(--accent-primary-rgb), 0.2);
+}
+
+.buttonSecondary:active {
+  box-shadow: none;
+}
+
+.buttonSecondary:disabled,
+.buttonSecondary.disabled {
+  box-shadow: none !important;
+  background-image: linear-gradient(
+    0deg,
+    var(--clr-slategray) 0%,
+    var(--clr-slategray) 100%
+  );
+  background: transparent;
+  border-color: var(--clr-lightgray);
+  color: var(--clr-gray);
+}
+
+.buttonFlush {
+  background-image: var(--accent-gradiant);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border: none;
+  font-weight: 500;
+}
+
+.buttonFlush:hover {
+  box-shadow: 0px 0px 6px 3px rgba(var(--accent-primary-rgb), 0.2);
+}
+
+.buttonFlush:active {
+  box-shadow: 0px 0px 4px 1px rgba(var(--accent-primary-rgb), 0.2);
+}
+
+.buttonFlush:disabled {
+  background-image: linear-gradient(
+    0deg,
+    var(--clr-lightgray) 0%,
+    var(--clr-lightgray) 100%
+  );
+  box-shadow: none;
+}
+
+.buttonBordered {
+  background: transparent;
+  border: 1px solid var(--clr-lavender);
+}
+
+.buttonBordered:hover {
+  box-shadow: 0px 0px 6px 3px rgba(var(--accent-primary-rgb), 0.2);
+}
+
+.buttonBordered:active {
+  box-shadow: 0px 0px 4px 1px rgba(var(--accent-primary-rgb), 0.2);
+}
+
+.buttonBordered:disabled {
+  background-image: linear-gradient(
+    0deg,
+    var(--clr-lightgray) 0%,
+    var(--clr-lightgray) 100%
+  );
+  box-shadow: none;
+}
+
+.none {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.none:disabled,
+.none.disabled {
+  cursor: not-allowed;
+  color: var(--clr-slategray);
+}
+
+.buttonSuccess {
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+}
+
+.buttonSuccess:hover {
+  box-shadow: 0px 0px 17px -4px var(--clr-green);
+}
+
+.buttonCancel {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-lavender);
+  color: var(--clr-red);
+}
+.buttonCancel:hover {
+  box-shadow: 0px 0px 12px -6px var(--clr-red);
+}
+
+/* Responsive start */
+
+@media only screen and (max-width: 991px) {
+  .button {
+    min-width: 90px;
+  }
+}
+
+/* Responsive end */

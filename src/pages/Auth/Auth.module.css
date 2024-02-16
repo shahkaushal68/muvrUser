@@ -1,0 +1,181 @@
+.loginInputWrap {
+  margin-top: 32px;
+}
+
+.emailLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.continueBtn {
+  min-width: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.continueWithBtn svg {
+  animation: none;
+}
+
+.continueWithBtn {
+  font-weight: 400;
+  color: var(--clr-darkgray);
+  width: 100%;
+  min-width: 100%;
+}
+
+.continueWithBtnContainer {
+  margin-top: 24px;
+  margin-bottom: 44px;
+}
+
+.continueWithBtnContainer .continueWithBtn:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.termsCheckbox :global .ant-checkbox {
+  align-self: baseline;
+  padding-top: 3px;
+}
+
+.termsCheckbox {
+  align-items: unset;
+}
+
+.termsCheckbox :global .ant-checkbox + span:last-of-type {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pageTitle {
+  font-weight: 600;
+  color: var(--clr-dark);
+}
+
+.pageSubTitle {
+  font-weight: 400;
+  color: var(--clr-darkgray);
+  margin-top: 4px;
+}
+
+.loginPageStructure {
+  padding: 30px 16px 40px 16px;
+}
+
+.otpInputWrap {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resendCodeText {
+  font-weight: 400;
+  color: var(--clr-darkgray);
+  margin-top: 32px;
+  text-align: center;
+}
+
+.verifyOtpBtn {
+  min-width: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.termsCheckbox :global .ant-checkbox {
+  align-self: baseline;
+  padding-top: 3px;
+}
+
+.termsCheckbox {
+  align-items: unset;
+}
+
+.termsCheckbox :global .ant-checkbox + span:last-of-type {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.titleBackBtnWrap {
+  display: flex;
+  align-items: center;
+}
+
+.otpInputVerificationCode {
+  min-height: 54px;
+  background-color: var(--clr-faintpurple);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 51px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: var(--font-euclid);
+}
+
+.otpInputVerificationCode:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.otpInputVerificationCode:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.otpSendMethodModal :global .ant-modal-close {
+  display: none;
+}
+
+.otpSendMethodModal {
+  padding: 24px 16px 16px 16px;
+}
+
+.otpSendMethodModalBtn {
+  width: 100%;
+  min-width: 100%;
+}
+
+/* Splash(User) start */
+.MuvrLogoWrap {
+  max-width: 95px;
+  max-height: 32px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+.MuvrLogoWrap img {
+  max-width: inherit;
+  max-height: inherit;
+}
+.logoCaptionWrap {
+  top: 16%;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.muvrBgImg {
+  width: 100%;
+  object-fit: cover;
+  height: calc(100vh - 224px);
+}
+.muvrBgWrap {
+  width: 100%;
+  position: relative;
+}
+.loginRegisterBtnWrap {
+  margin-top: 8px;
+}
+/* Splash(User) end */
+
+/* Get started start */
+.getStartedBtn {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+/* Get started end */

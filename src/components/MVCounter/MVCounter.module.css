@@ -1,0 +1,34 @@
+.quantityCounter button {
+  min-width: 32px;
+  min-height: 32px;
+  padding: 0;
+  border-radius: 8px;
+}
+.quantityCounter button svg {
+  animation: none;
+  margin: 0;
+}
+.quantityCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: auto; */
+}
+.quantityNum {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/* resposnive css start */
+@media (max-width: 399px) {
+  .quantityNum {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 349px) {
+  .quantityNum {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+/* resposnive css end */

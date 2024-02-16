@@ -1,0 +1,10 @@
+.userRequestDeleteSection {
+  max-width: 700px;
+  width: 100%;
+  min-height: auto;
+  background-color: var(--toastify-color-light);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  padding: 30px;
+  margin: auto;
+}

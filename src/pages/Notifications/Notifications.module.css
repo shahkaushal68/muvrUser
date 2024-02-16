@@ -1,0 +1,4 @@
+.notificationCardItem {
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+}

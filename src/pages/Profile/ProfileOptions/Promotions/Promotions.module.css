@@ -1,0 +1,5 @@
+.cardContentItem {
+  border-radius: 16px;
+  border: 1px solid var(--clr-lavender);
+  padding: 16px;
+}

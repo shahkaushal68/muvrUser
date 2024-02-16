@@ -1,0 +1,94 @@
+.ctmAvtar:global.ant-avatar {
+  width: 100%;
+  max-width: 122px;
+  height: 122px;
+  margin-bottom: 16px;
+}
+
+.profileHeader {
+  padding: 24px 0;
+}
+
+.profileContent {
+  padding: 0 0 24px;
+}
+
+.subHeading {
+  color: var(--clr-darkgray);
+}
+
+.bookButton {
+  height: 34px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 16px;
+  min-width: auto;
+}
+
+.profileContentListItem {
+  margin-bottom: 16px;
+}
+
+.profileContentListItem a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--clr-lavender);
+  padding: 16px;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+.profileContentListItem a:hover {
+  border-color: var(--accent-primary);
+}
+.profileContentListItem a:hover h4 {
+  color: var(--accent-primary);
+}
+.listItemRight,
+.logoutIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.profileContentIcon {
+  color: var(--accent-primary);
+  display: flex;
+}
+
+.logoutBtn h4 {
+  color: #eb5757;
+  transition: all 0.3s;
+}
+.logoutBtn h4:hover {
+  color: var(--accent-primary);
+}
+/* LOGOUT MODAL CSS START */
+.logOutModal .logOutBody {
+  padding-top: 40px;
+}
+
+.logOutCardContentWrap {
+  display: grid;
+  place-content: center;
+  grid-gap: 32px;
+}
+
+.logOutCardIcon {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(var(--clr-red-rgb), 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.logOutCardBtn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+/* LOGOUT MODAL CSS END */

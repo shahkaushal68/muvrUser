@@ -1,0 +1,188 @@
+.favoriteMuvrsPage {
+  height: 100%;
+}
+
+.favoriteMuvrsPage :global .ant-tabs,
+.favoriteMuvrsPage :global .ant-tabs-content,
+.favoriteMuvrsPage :global .ant-tabs-tabpane {
+  height: 100%;
+}
+
+.favoriteMuvrsPage :global .main-wrapper.no-favorite-muvrs .ant-tabs-tabpane .ant-tabs-tabpane-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favoriteMuvrsPage :global .main-wrapper .ant-tabs-nav {
+  margin-bottom: 15px;
+}
+
+.homePageTab :global .ant-tabs-tab {
+  width: 100%;
+}
+
+.homePageTab :global .ant-tabs-nav-list {
+  width: 100%;
+}
+
+.homePageTab :global .ant-tabs-tab {
+  height: 44px;
+  padding: 12px;
+  justify-content: center;
+}
+
+.homePageTab :global .ant-tabs-tab .ant-tabs-tab-btn {
+  color: var(--clr-darkgray);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Tab Active */
+.homePageTab :global .ant-tabs-tab .ant-tabs-tab-btn {
+  transform: 0.3s all;
+}
+
+.homePageTab :global .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--clr-white);
+  position: relative;
+  z-index: 1;
+}
+
+.homePageTab :global .ant-tabs-ink-bar {
+  background: var(--accent-gradiant);
+}
+
+.homePageTab > :global(.ant-tabs-nav .ant-tabs-ink-bar) {
+  height: 100%;
+}
+
+/* Tab Active End */
+
+.homePageTab :global .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+
+.homePageTab > :global(.ant-tabs-nav::before) {
+  border-bottom: 1px solid var(--clr-lavender);
+}
+
+.homePageTab :global .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+.favoriteMuvrRadio {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  padding: 12px 16px 12px 12px;
+  margin-bottom: 16px;
+}
+
+.favoriteMuvrRadio:last-child {
+  margin-bottom: 0;
+}
+
+.favoriteMuvrRadio input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.muvrExtraDetails {
+  display: flex;
+  align-items: center;
+  color: var(--clr-darkgray);
+}
+
+.muvrExtraDetails > :global(* + *) {
+  position: relative;
+  padding-left: 20px;
+}
+
+.muvrExtraDetails > :global(* + *)::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--clr-darkgray);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.muvrRating {
+  margin-right: 4px;
+  color: #d58c21;
+}
+
+.muvrSelectedRadio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-gray);
+  transition: 0.3s all;
+  margin-left: auto;
+  position: relative;
+}
+
+.muvrSelectedRadio.muvrSelected {
+  border-color: var(--accent-primary);
+}
+
+.muvrSelectedRadio::before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.3s all;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: var(--accent-primary);
+}
+
+.muvrSelectedRadio.muvrSelected::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--clr-darkgray);
+}
+.muvrCard {
+  border: 1px solid #ebe2f0;
+  border-radius: 16px;
+  position: relative;
+}
+.muvrCardContainer:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.closeIcon {
+  position: absolute;
+  right: 8px;
+  top: 0;
+}
+.muvrDetails {
+  padding: 12px;
+  border-bottom: 1px solid var(--clr-lavender);
+  transition: all 0.3s;
+}
+.muvrDetails:hover h4 {
+  color: var(--accent-primary);
+}
+.bookAgain {
+  padding: 12px;
+}
+.muvrDetailsLink:hover {
+  color: var(--clr-dark);
+}

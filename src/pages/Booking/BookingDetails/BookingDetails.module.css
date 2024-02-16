@@ -1,0 +1,89 @@
+.locationRoundBox {
+  min-width: 28px;
+  min-height: 28px;
+  border: 1px solid var(--clr-lavender);
+  background-color: var(--clr-cold-snow);
+}
+.locationRoundBox :global svg {
+  color: var(--accent-primary);
+}
+.pickupPriceGridBox {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+}
+.pickupPriceBox {
+  background-color: var(--clr-faintpurple);
+  border-radius: 8px;
+  padding: 8px;
+}
+.priceSummaryWrap li:first-child {
+  padding-top: 0;
+}
+.priceSummaryWrap li {
+  padding: 12px 0;
+}
+.priceSummaryWrap li:not(:last-child) {
+  border-bottom: 1px solid var(--clr-lavender);
+}
+.instructionListItemWrap {
+  padding-left: 16px;
+}
+.confirmBookingWrap {
+  border-radius: 8px;
+  background-color: var(--clr-faintpurple);
+}
+.bookingCancellationModal h5 {
+  max-width: 310px;
+}
+.bookingCancellationModal label {
+  margin-bottom: 15px;
+}
+.bookingCancellationModal :global .ant-radio-group {
+  margin-top: 15px;
+}
+.bookingCancellationModal :global textarea {
+  min-height: 90px;
+}
+.bookingCancellationModal ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.bookingCancellationModal .spacingBottom {
+  margin-bottom: 24px;
+}
+.fontMuvrBtn {
+  font-size: 12px;
+}
+.starIcon {
+  line-height: 0;
+  margin-right: 2px;
+}
+.ratingWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookingDetailsModalImgUploader {
+  display: none;
+}
+.imgUploadSlider :global .swiper-wrapper {
+  height: 90px;
+}
+
+.uploadedImg:global.ant-image-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* responsive css start */
+@media (max-width: 575px) {
+  .bookingCancellationModal label {
+    margin-bottom: 10px;
+  }
+  .bigCloseIcon {
+    max-width: 50px;
+  }
+  .bookingCancellationModal .spacingBottom {
+    margin-bottom: 16px;
+  }
+}
+/* responsive css end */

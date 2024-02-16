@@ -1,0 +1,80 @@
+
+
+/* Dont See Item Start typing modal start */
+.inputIconCircleWrap {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--clr-lavender);
+  border-radius: 50%;
+}
+
+.typeItemModal:global.ant-modal .ant-modal-close {
+  display: none;
+}
+
+.typeItemModalCheckbox:global.ant-checkbox-wrapper {
+  width: 100%;
+}
+.typeItemModalCheckbox :global .ant-checkbox + span {
+  width: 100%;
+}
+.typeItemsWrap :global .ant-checkbox-wrapper:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.typeItemsWrap {
+  margin-top: 14px;
+  max-height: 364px;
+  overflow-y: auto;
+}
+/* Dont See Item Start typing modal start */
+
+/* Price summary modal start */
+.priceSummaryModal:global.ant-modal .ant-modal-close {
+  display: none;
+}
+.priceWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.priceSummaryContainer .priceWrap:not(:last-of-type) {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--clr-lavender);
+}
+.priceSummaryContainer .priceWrap:not(:first-of-type) {
+  padding-top: 12px;
+}
+/* Price summary modal end */
+
+/* notRegisteredModal start */
+.notRegisteredModal:global.ant-modal .ant-modal-close {
+  display: none;
+}
+/* notRegisteredModal end */
+
+/* Request Favorite modal start */
+.requestFavoriteMuvrModal:global.ant-modal .ant-modal-close {
+  display: none;
+}
+.requestMuvrOptionsRadioBtn :global .ant-radio-wrapper:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+/* Request Favorite modal end */
+/* price summary modal start */
+.btnHeight {
+  min-height: 100%;
+}
+.discountWrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.finalPriceWrap{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* price summary modal end */

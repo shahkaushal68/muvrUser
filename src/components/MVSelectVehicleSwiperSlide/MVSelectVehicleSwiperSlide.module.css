@@ -1,0 +1,27 @@
+.selectVehicleSliderWraaper:global.swiper {
+  padding-bottom: 40px;
+}
+.selectVehicleSliderWraaper :global .ant-image::after {
+  content: "";
+  width: 295px;
+  height: 78px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(245, 231, 253, 0) 0%, #f5e7fd 100%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  bottom: -20px;
+}
+.vehicleContentWrap {
+  margin-top: 40px;
+}
+@media (max-width: 399px) {
+  .selectVehicleSliderWraaper :global .ant-image-img {
+    max-width: 85%;
+  }
+
+  .selectVehicleSliderWraaper :global .ant-image::after {
+    width: 100%;
+  }
+}

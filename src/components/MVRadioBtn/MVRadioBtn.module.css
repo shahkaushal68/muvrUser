@@ -1,0 +1,30 @@
+.MVRadio :global .ant-radio-wrapper .ant-radio-inner {
+  width: 20px;
+  height: 20px;
+  border-color: var(--clr-gray);
+  border-width: 2px;
+}
+.MVRadio :global .ant-radio-wrapper .ant-radio-inner::after {
+  background: var(--accent-gradiant);
+}
+.MVRadio :global .ant-radio-wrapper .ant-radio-inner::after {
+  width: 24px;
+  height: 24px;
+  margin-block-start: -12px;
+  margin-inline-start: -12px;
+}
+.MVRadio :global .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  background-color: white;
+}
+.MVRadio :global .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: var(--accent-primary);
+}
+.MVRadio:global.ant-radio-group {
+  width: 100%;
+}
+.MVRadio :global .ant-radio-wrapper {
+  width: 100%;
+}
+.MVRadio :global .ant-radio-wrapper span.ant-radio + * {
+  width: 100%;
+}

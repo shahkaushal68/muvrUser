@@ -1,0 +1,137 @@
+.paymentDetailsCard {
+  padding: 12px;
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.locationBg {
+  border: 1px solid var(--clr-lavender);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fcf6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.locationWrap {
+  display: flex;
+  align-items: center;
+}
+.paymentDetailsCard .locationWrap:first-child {
+  margin-bottom: 12px;
+}
+.dateTimeWrap {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.priceVehicalItemsCard {
+  background-color: var(--clr-faintpurple);
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+.stepsBtn {
+  composes: stepsBtn from "../MuvrBookingSteps.module.css";
+}
+
+.priceVehicalItemsCard h6 {
+  margin-bottom: 2px;
+}
+.priceVehicalItemsCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+}
+.earnedCreditCheckbox {
+  flex-direction: row-reverse;
+}
+.earnedCreditCheckbox:global.ant-checkbox-wrapper .ant-checkbox + span {
+  font-weight: 500;
+  color: var(--clr-green);
+}
+.earnedCreditWrap {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+.titleExtraWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.titleSectionWrap {
+  margin-bottom: 24px;
+}
+.payWithRadioBtn :global .ant-radio-wrapper {
+  flex-direction: row-reverse;
+}
+.payCardWrap {
+  display: flex;
+  align-items: center;
+}
+.visaCardWrap {
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+.payWithRadioBtn :global .ant-radio-wrapper:not(:last-of-type) {
+  border-bottom: 1px solid #ebe2f0;
+  padding-bottom: 16px;
+}
+.payWithBtn {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 164px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.payWithBtn:hover {
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.payWithBtn:active {
+  box-shadow: none;
+}
+.payWithBtnContainer {
+  display: flex;
+  align-items: center;
+}
+.payWithBtnContainer .payWithBtn:not(:last-of-type) {
+  margin-right: 15px;
+}
+.optionIconBg {
+  border: 1px solid var(--clr-lavender);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.otherOptionWrap {
+  display: flex;
+  align-items: center;
+}
+.otherOptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.otherOptionWrapper .otherOptionContainer:not(:last-of-type) {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--clr-lavender);
+}
+.otherOptionWrapper .otherOptionContainer:not(:first-of-type) {
+  padding-top: 16px;
+}

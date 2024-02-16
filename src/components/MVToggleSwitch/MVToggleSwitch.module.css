@@ -1,0 +1,21 @@
+.customToggleSwitch :global .ant-radio-button-wrapper:first-child {
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+}
+.customToggleSwitch :global .ant-radio-button-wrapper:last-child {
+  border-start-end-radius: 8px;
+  border-end-end-radius: 8px;
+}
+.customToggleSwitch :global .ant-radio-button-wrapper {
+  height: 35px;
+  border-color: var(--clr-lavender);
+  background-color: var(--clr-lavender);
+  line-height: 35px;
+  color: var(--clr-darkgray);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.customToggleSwitch :global .ant-radio-button-wrapper:hover {
+  color: var(--clr-violet);
+}

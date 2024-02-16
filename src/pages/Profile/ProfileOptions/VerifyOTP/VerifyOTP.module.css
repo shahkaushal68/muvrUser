@@ -1,0 +1,69 @@
+.pageTitle {
+  font-weight: 600;
+  color: var(--clr-dark);
+}
+
+.pageSubTitle {
+  font-weight: 400;
+  color: var(--clr-darkgray);
+  margin-top: 4px;
+  line-height: 150%;
+}
+
+/* OTP INPUT CSS START */
+.otpInputWrap {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otpInputVerificationCode {
+  min-height: 54px;
+  background-color: var(--clr-faintpurple);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 51px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: var(--font-euclid);
+  outline: 2px solid var(--clr-faintpurple);
+  transition: all 0.3s;
+}
+.otpInputVerificationCode:focus-within {
+  outline: 2px solid var(--accent-primary);
+}
+.otpInputVerificationCode:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.resendCodeText {
+  font-weight: 400;
+  color: var(--clr-darkgray);
+  margin-top: 32px;
+  text-align: center;
+}
+
+.verifyOtpBtn {
+  min-width: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.otpSendMethodModal {
+  padding: 24px 16px 16px 16px;
+}
+
+.otpSendMethodModalBtn {
+  width: 100%;
+  min-width: 100%;
+}
+
+.otpSendMethodModal :global .ant-modal-close {
+  display: none;
+}
+
+/* OTP INPUT CSS END */

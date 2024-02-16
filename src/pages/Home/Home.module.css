@@ -1,0 +1,122 @@
+.homeMovesSpacing {
+  padding: 24px 16px;
+}
+.customSwiperStyle :global .swiper-slide {
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  padding: 14px;
+  transition: all 0.3s;
+}
+.customSwiperStyle :global .swiper-slide:hover {
+  border-color: var(--accent-primary);
+}
+.bage {
+  min-width: 70px;
+  min-height: 30px;
+  border-radius: 4px;
+  padding: 4px;
+  background: rgba(149, 6, 230, 0.1);
+}
+.bage span {
+  font-size: 12px;
+}
+.gray {
+  font-size: 12px;
+  color: #9a9696;
+}
+.typeOfMovesGrid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+.typeOfMovesBox {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 16px;
+  border: 1px solid var(--clr-lavender);
+}
+.imgBox {
+  padding: 22px 30px;
+  background-color: var(--clr-faintpurple);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.movesName {
+  padding: 8px 16px 16px;
+}
+.movesTitle {
+  line-height: 20.29px;
+}
+
+.counterCardWrap {
+  padding: 16px;
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.counterCardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.learnMoreCard {
+  padding: 8px;
+  border: 1px solid var(--clr-lavender);
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.learnMoreCard > img {
+  border-radius: 8px;
+  max-width: 117px;
+  width: 117px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.learnMoreCard:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.locationInputWrap {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+/* responsive css start */
+@media (max-width: 575px) {
+  .movesName {
+    padding: 8px 12px 16px;
+  }
+  .movesName h4 {
+    font-size: 14px;
+    line-height: inherit;
+  }
+}
+/* responsive css end */
+.userAvatarImg :global .ant-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid var(--clr-white);
+  background-color: var(--clr-lavender);
+}
+.userAvatarImg :global .ant-image:not(:last-child) {
+  position: relative;
+  z-index: 1;
+}
+.userAvatarImg :global .ant-image:not(:first-child) {
+  /* position: ; */
+  margin-left: -15px;
+}
+/* responsive css start */
+@media (max-width: 349px) {
+  .userAvatarImg :global .ant-image {
+    width: 30px;
+    height: 30px;
+  }
+}

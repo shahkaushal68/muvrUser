@@ -1,0 +1,15 @@
+.switch:global.ant-switch.ant-switch-checked {
+  background-image: var(--accent-gradiant);
+}
+
+.switch:global.ant-switch:hover:not(.ant-switch-disabled) {
+  background-color: var(--clr-darkgray);
+}
+
+.switch:global.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background-image: var(--accent-gradiant);
+}
+
+.switch:global.ant-switch:focus-visible {
+  outline: 1px solid black;
+}

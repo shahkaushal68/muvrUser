@@ -1,0 +1,7 @@
+.addCardContent :global .ant-input-affix-wrapper {
+  color: var(--clr-gray);
+}
+
+.dateSelector {
+  min-width: 100%;
+}

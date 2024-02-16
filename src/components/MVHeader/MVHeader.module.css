@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--clr-lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  height: 75px;
+  flex-shrink: 0;
+}
+/* resposnive css start */
+@media (max-width: 575px) {
+  .header {
+    padding: 14px 10px;
+  }
+}
+/* resposnive css end */

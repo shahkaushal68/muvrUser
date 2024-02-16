@@ -1,0 +1,103 @@
+.squareTabs :global .ant-tabs-tab {
+  width: 100%;
+  justify-content: center;
+}
+
+.squareTabs :global .ant-tabs-nav-list {
+  width: 100%;
+}
+centered .squareTabs :global .ant-tabs-tab {
+  height: 44px;
+  padding: 12px;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.squareTabs :global .ant-tabs-tab .ant-tabs-tab-btn {
+  color: var(--clr-darkgray);
+  font-weight: 400;
+  font-size: 16px;
+}
+.squareTabs :global .ant-tabs-tab .ant-tabs-tab-btn:hover {
+  color: var(--accent-primary);
+}
+/* Tab Active */
+.squareTabs :global .ant-tabs-tab .ant-tabs-tab-btn {
+  transform: 0.3s all;
+}
+
+.squareTabs :global .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--clr-white);
+  position: relative;
+  z-index: 1;
+}
+
+.squareTabs :global .ant-tabs-ink-bar {
+  background: var(--accent-gradiant);
+}
+
+.squareTabs > :global(.ant-tabs-nav .ant-tabs-ink-bar) {
+  height: 100%;
+}
+
+/* Tab Active End */
+
+.squareTabs :global .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+
+.squareTabs > :global(.ant-tabs-nav::before) {
+  border-bottom: 1px solid var(--clr-lavender);
+}
+
+.squareTabs :global .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-nav-list {
+  width: auto;
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-ink-bar,
+.pillTabs :global .ant-tabs-nav::before {
+  display: none;
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-tab {
+  border: 1px solid var(--clr-lavender);
+  border-radius: 16px;
+  padding: 8px 12px;
+  height: auto;
+  transition: all 0.3s;
+}
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-tab:hover {
+  border-color: var(--accent-primary);
+}
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-tab .ant-tabs-tab-btn {
+  line-height: 1;
+  font-size: 14px;
+  color: var(--clr-darkgray);
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-tab:hover {
+  color: var(--clr-darkgray);
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:not(:first-child) {
+  margin: 0 0 0 12px;
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-tab.ant-tabs-tab-active {
+  background-image: var(--accent-gradiant);
+  border-color: transparent;
+}
+
+.pillTabs :global .ant-tabs-nav-wrap .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--clr-white);
+}
+
+.tabsCentered,
+.tabsCentered :global(.ant-tabs-content),
+.tabsCentered :global(.ant-tabs-tabpane),
+.tabsCentered :global(.ant-tabs-content-holder) {
+  height: 100%;
+}

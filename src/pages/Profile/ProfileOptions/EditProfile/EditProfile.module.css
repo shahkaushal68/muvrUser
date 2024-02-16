@@ -1,0 +1,18 @@
+.ctmAvtar:global.ant-avatar {
+  width: 100%;
+  max-width: 122px;
+  height: 122px;
+}
+
+.profileHeader {
+  padding: 24px 0;
+  position: relative;
+}
+
+.profileContent {
+  padding: 0 0 24px;
+}
+.editProfileImgUploader {
+  display: none;
+  position: relative;
+}

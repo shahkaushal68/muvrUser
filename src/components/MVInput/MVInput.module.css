@@ -1,0 +1,111 @@
+.input {
+  height: 54px;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+.input,
+.input input {
+  color: var(--clr-dark);
+  font-weight: 500;
+  background-color: var(--clr-faintpurple);
+  border-radius: 8px 8px 0 0;
+  border: 1px solid var(--clr-violet);
+  border-width: 0 0 1px 0;
+}
+
+.input:hover,
+.input input:hover,
+.input:global(.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover),
+.input:focus,
+.input input:focus,
+.input:global(.ant-input-affix-wrapper:focus),
+.input:global(.ant-input-affix-wrapper-focused) {
+  border-color: var(--accent-primary);
+  border-inline-end-width: 0px;
+  box-shadow: none;
+  border-bottom-width: 1px;
+}
+
+.input:global(.ant-input:focus),
+.input:global(.ant-input-focused) {
+  box-shadow: none;
+}
+
+.input::placeholder,
+.input input::placeholder {
+  color: var(--clr-gray);
+}
+
+.input:not(.hasPrefix) {
+  padding-top: 18px;
+  padding-bottom: 5px;
+}
+
+.input:not(.hasPrefix) ~ .label {
+  left: 15px;
+}
+
+.input:not(.hasLabel) {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.hasLabel input {
+  margin-top: 14px;
+}
+
+.input :global .ant-input-prefix {
+  margin-right: 10px;
+}
+
+.hasLabel ~ .label {
+  position: absolute;
+  font-size: 12px;
+  left: 58px;
+  top: 10px;
+  z-index: 1;
+  font-weight: 500;
+  color: var(--clr-darkgray);
+}
+
+.isDisabled,
+.isDisabled ~ .label,
+.input:global(.ant-input-disabled)::placeholder,
+.input :global(.ant-input[disabled])::placeholder {
+  color: var(--clr-lightgray);
+}
+
+.isDisabled:hover {
+  border-color: var(--clr-lavender);
+}
+
+.isDisabled:not(.hasPrefix):hover {
+  border-color: var(--clr-lavender);
+  border-inline-end-width: 0px;
+}
+
+.input:global(.ant-input-disabled),
+.input[disabled] {
+  color: var(--clr-lightgray);
+  background-color: #f8f5ff;
+}
+
+textarea.input.hasLabel {
+  padding-top: 24px;
+  min-height: 120px;
+  resize: none;
+}
+
+textarea.input ~ .label {
+  top: 0;
+  left: 0;
+  padding: 10px 4px 0 0;
+  width: calc(100% - 15px);
+  background-color: var(--clr-faintpurple);
+}
+
+@media only screen and (max-width: 1279px) {
+  .input {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,146 @@
+.addImagesWrap :global .ant-upload-wrapper .ant-upload.ant-upload-select {
+  border-color: var(--accent-primary);
+  border-width: 2px;
+}
+.addImagesWrap :global .anticon-eye {
+  display: none;
+}
+.addImagesWrap
+  :global
+  .ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload-list.ant-upload-list-picture-card
+  .ant-upload-list-item-actions
+  .anticon-delete {
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #779397;
+  margin: 0;
+}
+.addImagesWrap
+  :global
+  .ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload-list.ant-upload-list-picture-card
+  .ant-upload-list-item-actions
+  .anticon-delete:hover {
+  background-color: red;
+}
+.addImagesWrap :global .anticon-delete svg {
+  display: none;
+}
+.addImagesWrap :global .anticon-delete::after {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTk5OTMgNC4wNTczMkw4LjI5OTkzIDAuNzU3MzI0TDkuMjQyNiAxLjY5OTk5TDUuOTQyNiA0Ljk5OTk5TDkuMjQyNiA4LjI5OTk5TDguMjk5OTMgOS4yNDI2Nkw0Ljk5OTkzIDUuOTQyNjZMMS42OTk5MyA5LjI0MjY2TDAuNzU3MjYzIDguMjk5OTlMNC4wNTcyNiA0Ljk5OTk5TDAuNzU3MjYzIDEuNjk5OTlMMS42OTk5MyAwLjc1NzMyNEw0Ljk5OTkzIDQuMDU3MzJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
+  width: 12px;
+  height: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.addImagesWrap :global .ant-upload-list-item-actions {
+  height: inherit;
+  display: flex;
+  padding: 8px;
+}
+.addImagesWrap
+  :global
+  .ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload-list.ant-upload-list-picture-card
+  .ant-upload-list-item {
+  padding: 0;
+  border-radius: inherit;
+  border-radius: 8px;
+}
+.addImagesWrap
+  :global
+  .ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload-list.ant-upload-list-picture-card
+  .ant-upload-list-item::before {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.addImagesWrap :global button {
+  margin-left: auto;
+}
+
+.imagesGrid {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.uploadButton {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-lavender);
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--clr-faintpurple);
+  height: 54px;
+  color: var(--clr-dark);
+  cursor: pointer;
+}
+
+.uploadButton input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.gridItem {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.gridItem:before {
+  display: block;
+  padding-top: 100%;
+  content: "";
+}
+
+.gridItem > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gridItem button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.12);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-white);
+  z-index: 2;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .imagesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .imagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

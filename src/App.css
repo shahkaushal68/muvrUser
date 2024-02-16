@@ -1,0 +1,58 @@
+.App {
+  max-width: 768px;
+  margin: 0 auto;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header-btn {
+  border: 1px solid var(--clr-lavender);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-white);
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-btn:hover {
+  border-color: var(--accent-primary);
+}
+
+.positioned-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.positioned-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* HEADER END */
+
+.content-full {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+/* resposnive css start */
+@media (max-width: 575px) {
+  .header-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
+/* resposnive css end */

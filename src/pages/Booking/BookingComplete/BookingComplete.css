@@ -1,0 +1,30 @@
+/* Moving Scheduled start */
+.green-tick {
+  max-width: 64px;
+  max-height: 64px;
+  margin: 0 auto;
+  margin-top: 132px;
+  margin-bottom: 16px;
+}
+.green-tick img {
+  max-width: inherit;
+  max-height: inherit;
+}
+.vehicle-img {
+  max-width: 243px;
+  max-height: 125px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+.vehicle-img img {
+  max-width: inherit;
+  max-height: inherit;
+}
+.view-bookingbook-muvrlink-wrap {
+  margin-top: 95px;
+}
+.view-bookingbook-muvrlink-wrap a:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+/* Moving Scheduled end */
